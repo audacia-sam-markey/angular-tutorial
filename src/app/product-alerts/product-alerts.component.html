@@ -1,0 +1,5 @@
+<!-- If statement if the prop.product price is over 700 it will show a notify button -->
+<p *ngIf="product && product.price > 700">
+  <!-- Emitting to the parent when button is clicked -->
+  <button type="button" (click)="notify.emit()">Notify Me</button>
+</p>
