@@ -18,6 +18,7 @@ export class CartComponent {
   onSubmit(): void {
     //processes checkout
     this.items = this.cartService.clearCart();
+    console.log('Your order has been confirmed', this.checkoutForm.value);
     window.alert(
       `Your order has been confirmed\nYourAddress is ${this.checkoutForm.value.name}\n ${this.checkoutForm.value.address}`
     );
